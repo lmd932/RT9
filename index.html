@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bikelife Shop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- En-tête -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>RT9 Bikelife Shop</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#boutique">Boutique</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="cart">
+        <span id="cart-count">0</span> 🛒
+      </div>
+    </div>
+  </header>
+
+  <!-- Accueil -->
+  <section id="accueil" class="accueil">
+    <div class="container">
+      <h2>Bienvenue dans l'univers Bikelife</h2>
+      <p>Explorez notre collection de produits conçus pour les passionnés de Bikelife.</p>
+      <a href="#boutique" class="btn">Découvrir nos produits</a>
+    </div>
+  </section>
+
+  <!-- Boutique -->
+  <section id="boutique" class="boutique">
+    <div class="container">
+      <h2>Notre Boutique</h2>
+      <div class="produits">
+        <!-- Les produits seront ajoutés via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- À propos -->
+  <section id="apropos" class="apropos">
+    <div class="container">
+      <h2>À propos de nous</h2>
+      <p>
+        Nous sommes une équipe de passionnés de Bikelife, créateurs de produits pour les riders du monde entier.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contactez-nous</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Nom :</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message :</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Modal et Overlay -->
+  <div class="overlay"></div>
+  <div class="modal"></div>
+
+  <!-- Pied de page -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 RT9 Bikelife Shop - Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
